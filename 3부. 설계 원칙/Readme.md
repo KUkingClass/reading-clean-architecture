@@ -4,7 +4,7 @@
 
 ## 객체 지향 프로그래밍 (Object-oriented Programming)
 
-![Untitled](%5BCleanArchitecture%5D%20Chapter3%20%E1%84%89%E1%85%A5%E1%86%AF%E1%84%80%E1%85%A8%E1%84%8B%E1%85%AF%E1%86%AB%E1%84%8E%E1%85%B5%E1%86%A8%20110fc1d2d2de47b5a6b60fb75821ba22/Untitled.png)
+![Untitled](./assets/Untitled.png)
 
 <aside>
 💡 데이터를 **객체로 추상화**시켜, 객체 내부의 메서드 및 필드를 호출하며 **서로간의 상호작용**을 통해 로직을 구성하는 방법
@@ -331,7 +331,7 @@ fun main(args: Array) {
 - 3개의 클래스로 나누고, EmployeeData라는 클래스가 공유하도록 한다.
 - 단, EmployeeData에서 3가지 클래스를 인스턴스화 하여 가지고 있어야 하고 계속 추적해야 하는데,,
 
-![Untitled](%5BCleanArchitecture%5D%20Chapter3%20%E1%84%89%E1%85%A5%E1%86%AF%E1%84%80%E1%85%A8%E1%84%8B%E1%85%AF%E1%86%AB%E1%84%8E%E1%85%B5%E1%86%A8%20110fc1d2d2de47b5a6b60fb75821ba22/Untitled%201.png)
+![Untitled](./assets/Untitled%201.png)
 
 🌱 Facade 패턴!
 
@@ -342,7 +342,7 @@ fun main(args: Array) {
 - ex) 클라이언트는 오직 Facade 클래스만 알고있음 → 클라이언트가 서브시스템에 의존하지 않는다.
     - 사용자는 동작 버튼 하나만 누르면 → 세탁, 행굼, 탈수 과정을 자동으로 진행
 
-![Untitled](%5BCleanArchitecture%5D%20Chapter3%20%E1%84%89%E1%85%A5%E1%86%AF%E1%84%80%E1%85%A8%E1%84%8B%E1%85%AF%E1%86%AB%E1%84%8E%E1%85%B5%E1%86%A8%20110fc1d2d2de47b5a6b60fb75821ba22/Untitled%202.png)
+![Untitled](./assets/Untitled%202.png)
 
 - SubSystem
 
@@ -416,7 +416,7 @@ public class Washer {
         - Rectangle → 높이와 너비가 독립적으로 변경
         - Square → 높이와 너비가 반드시 함께 변경
 
-![Untitled](%5BCleanArchitecture%5D%20Chapter3%20%E1%84%89%E1%85%A5%E1%86%AF%E1%84%80%E1%85%A8%E1%84%8B%E1%85%AF%E1%86%AB%E1%84%8E%E1%85%B5%E1%86%A8%20110fc1d2d2de47b5a6b60fb75821ba22/Untitled%203.png)
+![Untitled](./assets/Untitled%203.png)
 
 - 이 코드에서 Square를 생성하면 assert문 실패
 
@@ -475,11 +475,11 @@ fun main() {
 - ex) User1은 op1(), User2는 op2(), User3는 op3() 만 사용한다고 가정
     - op2()를 재배포 → User1, User3 까지 다시 재배포해야함
 
-![Untitled](%5BCleanArchitecture%5D%20Chapter3%20%E1%84%89%E1%85%A5%E1%86%AF%E1%84%80%E1%85%A8%E1%84%8B%E1%85%AF%E1%86%AB%E1%84%8E%E1%85%B5%E1%86%A8%20110fc1d2d2de47b5a6b60fb75821ba22/Untitled%204.png)
+![Untitled](./assets/Untitled%204.png)
 
 - 적절한 인터페이스로 분리한다.
 
-![Untitled](%5BCleanArchitecture%5D%20Chapter3%20%E1%84%89%E1%85%A5%E1%86%AF%E1%84%80%E1%85%A8%E1%84%8B%E1%85%AF%E1%86%AB%E1%84%8E%E1%85%B5%E1%86%A8%20110fc1d2d2de47b5a6b60fb75821ba22/Untitled%205.png)
+![Untitled](./assets/Untitled%205.png)
 
 🌱 불필요한 기능이 많은 것에 의존하지 말아야 한다.
 
